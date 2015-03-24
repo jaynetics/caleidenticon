@@ -35,7 +35,7 @@ module Caleidenticon
     options[:density]    = [[options[:density], 2].max, 10].min
     options[:spikiness]  = [options[:spikiness], 1].max
 
-    raise ArgumentError.new('input cannot be empty') if input.blank?
+    raise ArgumentError.new('input cannot be empty') if input.nil? || input == ''
     raise ArgumentError.new('salt must be a string of 21 ASCII chars') unless BCrypt::Engine.valid_salt?(full_salt)
     raise ArgumentError.new('invalid colors') unless options[:colors].map{|array| array.size} == [3,3,3,3] &&
                                                      options[:colors].flatten.all?{|val| (0..255).include?(val)}
