@@ -36,8 +36,8 @@ Using your own salt is optional, but it is recommended, as it ensures that the m
 
 With the colors: option you can make the identicons fit in more closely with the color scheme of your app. E.g. if your app has bright green and blue colors you could do something like:
 
-    identicon_options = {salt: my_salt, colors: [[80,255,100], [80,100,255], [0,200,255], [0,255,200]]}
-    Caleidenticon.create_and_save(user.email, user.identicon_path, identicon_options)
+    options = {salt: my_salt, colors: [[80,255,100], [80,100,255], [0,200,255], [0,255,200]]}
+    Caleidenticon.create_and_save(user.email, user.identicon_path, options)
 
 Which will produce Identicons like these:
 
