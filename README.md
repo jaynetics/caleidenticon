@@ -51,4 +51,4 @@ More complex and dense →
 
 To test your settings, create a large number of identicons by running:
 
-    Caleidenticon.run_test(my_output_dir, number_of_identiconts, my_options)
+    Caleidenticon.run_test(my_output_dir, number_of_identicons, my_options)
