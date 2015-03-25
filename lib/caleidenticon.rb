@@ -175,7 +175,7 @@ module Caleidenticon
       output_dir = File.join(output_dir, "caleidenticon_test_#{start}")
       Dir.mkdir(output_dir)
     else
-      raise ArgumentError.new('no output_dir') unless
+      raise ArgumentError.new('no output_dir')
     end
 
     iterations.times do
