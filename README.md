@@ -3,7 +3,7 @@
 
 ![Example Identicons 1](https://dl.dropboxusercontent.com/s/8t5oww83d5vcagw/identicons.png)
 
-Caleidenticon creates caleidoscope-like [identicons](https://en.wikipedia.org/wiki/Identicon).
+Caleidenticon is a deterministic generator for caleidoscope-like [identicons](https://en.wikipedia.org/wiki/Identicon).
 
 It is based on [RubyIdenticon](https://github.com/chrisbranson/ruby_identicon) by Chris Branson which in turn was based on [go-identicon](https://github.com/dgryski/go-identicon) by Damian Gryski.
 
