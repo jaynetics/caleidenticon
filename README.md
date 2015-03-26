@@ -1,4 +1,3 @@
-
 # Caleidenticon
 
 ![Example Identicons 1](https://dl.dropboxusercontent.com/s/8t5oww83d5vcagw/identicons.png)
@@ -32,6 +31,8 @@ create_and_save takes 3 parameters:
     salt:            # String of 21 alphanumeric chars, used for hashing the input.
     debug:           # Bool - if true, the gem will print a lot of debug information.
 
+Whatever options you set, the results always look best if displayed at less than their full resolution, e.g. 50% or 25%.
+
 Using your own salt is optional, but it is recommended, as it ensures that the mapping from input to identicon will be unique to your application.
 
 With the colors: option you can make the identicons fit in more closely with the color scheme of your app. E.g. if your app has bright green and blue colors you could do something like:
@@ -49,6 +50,6 @@ More complex and dense →
 
 ![Example Identicons 3](https://dl.dropboxusercontent.com/s/zupywnv0lhst3nz/identicon_options.png)
 
-To test your settings, create a large number of identicons by running:
+To test your settings, create a large number of random identicons by running:
 
     Caleidenticon.run_test(my_output_dir, number_of_identicons, my_options)
